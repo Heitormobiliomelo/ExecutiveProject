@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "siteName": "Alex Morgan",
+    "htmlLang": "en"
+  },
+  "nav": {
+    "whoIAm": "Who I Am",
+    "career": "Career",
+    "impact": "Impact",
+    "caseStudies": "Case Studies",
+    "howIThink": "How I Think",
+    "inflectionPoints": "Career Inflection Points",
+    "recommendations": "Recommendations",
+    "letsTalk": "Let's Talk"
+  },
+  "landing": {
+    "photoAlt": "Professional photo — placeholder",
+    "role": "Chief Strategy Officer",
+    "summary": "Fifteen years turning ambiguous problems into funded decisions. Built and led teams across three continents. Currently evaluating Chief of Staff and CSO roles at scale-stage companies.",
+    "audioGuide": "Audio Guide",
+    "audioGuideSoon": "Full guided experience — coming soon",
+    "exploreFreely": "Explore Freely",
+    "downloadExecutive": "Download Executive Resume",
+    "downloadAts": "Download ATS Resume",
+    "linkedin": "LinkedIn",
+    "sectionsTitle": "Explore"
+  },
+  "career": {
+    "pageTitle": "Career",
+    "intro": "One placeholder entry, built to validate the pattern every future role will follow.",
+    "companyName": "Company X",
+    "companyRole": "VP of Strategy & Operations",
+    "companyPeriod": "2019 — 2022 (placeholder dates)",
+    "audioGuide": "Audio Guide",
+    "context": {
+      "label": "Context",
+      "body": "Company X was a mid-market logistics platform preparing for a Series C round, with three regional business units reporting through inconsistent metrics."
+    },
+    "challenge": {
+      "label": "Challenge",
+      "body": "The board could not compare unit performance across regions, which delayed two prior fundraising conversations by a combined four months (placeholder figures)."
+    },
+    "actions": {
+      "label": "Actions",
+      "body": "Designed a single reporting framework across the three units, renegotiated two vendor contracts, and rebuilt the planning cycle from annual to rolling quarterly."
+    },
+    "impact": {
+      "label": "Impact",
+      "body": "Reporting cycle time reduced from 21 to 6 days. Series C closed 5 weeks ahead of the revised timeline (placeholder figures)."
+    },
+    "lessons": {
+      "label": "Lessons",
+      "body": "Standardizing metrics before scaling headcount would have avoided a second re-org 18 months later."
+    },
+    "evidence": {
+      "label": "Evidence",
+      "placeholder": "Placeholder — will link to board deck, dashboard screenshot, or press release in Phase 2"
+    },
+    "audioCommentary": {
+      "label": "Audio Commentary"
+    }
+  },
+  "player": {
+    "play": "Play",
+    "pause": "Pause",
+    "next": "Next",
+    "prev": "Previous"
+  },
+  "comingSoon": {
+    "badge": "In construction",
+    "title": "This section is being built",
+    "body": "Real content for this page arrives in Phase 2, once career history, metrics, and recordings are in place."
+  },
+  "footer": {
+    "text": "Executive Career Experience — Phase 1 architecture preview. All names, companies, and figures on this page are placeholders."
+  }
+}

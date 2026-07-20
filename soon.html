@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coming Soon — Alex Morgan</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body data-page="soon">
+
+<header class="site-header">
+  <a class="site-header__name" href="index.html" data-i18n="meta.siteName">Alex Morgan</a>
+
+  <nav>
+    <ul class="site-nav">
+      <li><a href="soon.html?section=whoIAm" data-page="who-i-am" data-i18n="nav.whoIAm">Who I Am</a></li>
+      <li><a href="career.html" data-page="career" data-i18n="nav.career">Career</a></li>
+      <li><a href="soon.html?section=impact" data-page="impact" data-i18n="nav.impact">Impact</a></li>
+      <li><a href="soon.html?section=caseStudies" data-page="case-studies" data-i18n="nav.caseStudies">Case Studies</a></li>
+      <li><a href="soon.html?section=howIThink" data-page="how-i-think" data-i18n="nav.howIThink">How I Think</a></li>
+      <li><a href="soon.html?section=inflectionPoints" data-page="inflection-points" data-i18n="nav.inflectionPoints">Career Inflection Points</a></li>
+      <li><a href="soon.html?section=recommendations" data-page="recommendations" data-i18n="nav.recommendations">Recommendations</a></li>
+      <li><a href="soon.html?section=letsTalk" data-page="lets-talk" data-i18n="nav.letsTalk">Let's Talk</a></li>
+    </ul>
+  </nav>
+
+  <div class="lang-switcher">
+    <button class="lang-switcher__button" type="button">
+      🌐 <span class="lang-switcher__button-label">EN</span>
+    </button>
+    <div class="lang-switcher__menu">
+      <button class="lang-switcher__option" data-lang="en" type="button">English</button>
+      <button class="lang-switcher__option" data-lang="pt" type="button">Português</button>
+      <button class="lang-switcher__option" data-lang="es" type="button">Español</button>
+    </div>
+  </div>
+</header>
+
+<main class="container section prose">
+  <p class="badge-soon" data-i18n="comingSoon.badge">In construction</p>
+  <h1 id="soon-section-title" data-i18n="nav.whoIAm">Section</h1>
+  <h2 data-i18n="comingSoon.title">This section is being built</h2>
+  <p data-i18n="comingSoon.body">Real content for this page arrives in Phase 2.</p>
+  <p><a href="index.html">&larr; <span data-i18n="landing.exploreFreely">Back</span></a></p>
+</main>
+
+<footer class="site-footer container">
+  <p data-i18n="footer.text">Executive Career Experience — Phase 1 architecture preview.</p>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const section = params.get("section");
+    const validSections = ["whoIAm", "impact", "caseStudies", "howIThink", "inflectionPoints", "recommendations", "letsTalk"];
+    if (section && validSections.includes(section)) {
+      document.getElementById("soon-section-title").setAttribute("data-i18n", `nav.${section}`);
+    }
+  });
+</script>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/i18n.js"></script>
+</body>
+</html>

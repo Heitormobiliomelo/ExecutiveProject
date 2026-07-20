@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "siteName": "Alex Morgan",
+    "htmlLang": "pt-BR"
+  },
+  "nav": {
+    "whoIAm": "Quem Sou",
+    "career": "Carreira",
+    "impact": "Impacto",
+    "caseStudies": "Estudos de Caso",
+    "howIThink": "Como Penso",
+    "inflectionPoints": "Pontos de Inflexão",
+    "recommendations": "Recomendações",
+    "letsTalk": "Vamos Conversar"
+  },
+  "landing": {
+    "photoAlt": "Foto profissional — placeholder",
+    "role": "Chief Strategy Officer",
+    "summary": "Quinze anos transformando problemas ambíguos em decisões financiadas. Construiu e liderou times em três continentes. Atualmente avaliando posições de Chief of Staff e CSO em empresas em fase de escala.",
+    "audioGuide": "Guia em Áudio",
+    "audioGuideSoon": "Experiência guiada completa — em breve",
+    "exploreFreely": "Explorar Livremente",
+    "downloadExecutive": "Baixar Currículo Executivo",
+    "downloadAts": "Baixar Currículo ATS",
+    "linkedin": "LinkedIn",
+    "sectionsTitle": "Explorar"
+  },
+  "career": {
+    "pageTitle": "Carreira",
+    "intro": "Um registro placeholder, construído para validar o padrão que todas as futuras posições seguirão.",
+    "companyName": "Empresa X",
+    "companyRole": "VP de Estratégia & Operações",
+    "companyPeriod": "2019 — 2022 (datas fictícias)",
+    "audioGuide": "Guia em Áudio",
+    "context": {
+      "label": "Contexto",
+      "body": "A Empresa X era uma plataforma de logística de médio porte se preparando para uma rodada Série C, com três unidades regionais reportando métricas inconsistentes entre si."
+    },
+    "challenge": {
+      "label": "Desafio",
+      "body": "O conselho não conseguia comparar o desempenho das unidades entre regiões, o que atrasou duas conversas de captação anteriores em quatro meses combinados (números fictícios)."
+    },
+    "actions": {
+      "label": "Ações",
+      "body": "Desenhei um framework único de relatórios entre as três unidades, renegociei dois contratos de fornecedores e reconstruí o ciclo de planejamento de anual para trimestral contínuo."
+    },
+    "impact": {
+      "label": "Impacto",
+      "body": "O ciclo de relatórios caiu de 21 para 6 dias. A Série C foi fechada 5 semanas antes do cronograma revisado (números fictícios)."
+    },
+    "lessons": {
+      "label": "Lições",
+      "body": "Padronizar as métricas antes de escalar o time teria evitado uma segunda reorganização 18 meses depois."
+    },
+    "evidence": {
+      "label": "Evidência",
+      "placeholder": "Placeholder — vai linkar para apresentação ao conselho, print do dashboard ou release na Fase 2"
+    },
+    "audioCommentary": {
+      "label": "Comentário em Áudio"
+    }
+  },
+  "player": {
+    "play": "Reproduzir",
+    "pause": "Pausar",
+    "next": "Avançar",
+    "prev": "Voltar"
+  },
+  "comingSoon": {
+    "badge": "Em construção",
+    "title": "Esta seção está sendo construída",
+    "body": "O conteúdo real desta página chega na Fase 2, quando o histórico de carreira, as métricas e as gravações estiverem prontos."
+  },
+  "footer": {
+    "text": "Executive Career Experience — prévia da arquitetura, Fase 1. Todos os nomes, empresas e números nesta página são fictícios."
+  }
+}

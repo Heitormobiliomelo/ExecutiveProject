@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "siteName": "Alex Morgan",
+    "htmlLang": "es"
+  },
+  "nav": {
+    "whoIAm": "Quién Soy",
+    "career": "Carrera",
+    "impact": "Impacto",
+    "caseStudies": "Casos de Estudio",
+    "howIThink": "Cómo Pienso",
+    "inflectionPoints": "Puntos de Inflexión",
+    "recommendations": "Recomendaciones",
+    "letsTalk": "Hablemos"
+  },
+  "landing": {
+    "photoAlt": "Foto profesional — placeholder",
+    "role": "Chief Strategy Officer",
+    "summary": "Quince años convirtiendo problemas ambiguos en decisiones financiadas. Construí y lideré equipos en tres continentes. Actualmente evaluando roles de Chief of Staff y CSO en empresas en fase de escalado.",
+    "audioGuide": "Guía de Audio",
+    "audioGuideSoon": "Experiencia guiada completa — próximamente",
+    "exploreFreely": "Explorar Libremente",
+    "downloadExecutive": "Descargar CV Ejecutivo",
+    "downloadAts": "Descargar CV ATS",
+    "linkedin": "LinkedIn",
+    "sectionsTitle": "Explorar"
+  },
+  "career": {
+    "pageTitle": "Carrera",
+    "intro": "Un registro placeholder, construido para validar el patrón que seguirán todas las futuras posiciones.",
+    "companyName": "Empresa X",
+    "companyRole": "VP de Estrategia y Operaciones",
+    "companyPeriod": "2019 — 2022 (fechas ficticias)",
+    "audioGuide": "Guía de Audio",
+    "context": {
+      "label": "Contexto",
+      "body": "Empresa X era una plataforma de logística de mercado medio que se preparaba para una ronda Serie C, con tres unidades regionales reportando métricas inconsistentes entre sí."
+    },
+    "challenge": {
+      "label": "Desafío",
+      "body": "El directorio no podía comparar el desempeño de las unidades entre regiones, lo que retrasó dos conversaciones de financiamiento previas en cuatro meses combinados (cifras ficticias)."
+    },
+    "actions": {
+      "label": "Acciones",
+      "body": "Diseñé un marco único de reportes entre las tres unidades, renegocié dos contratos con proveedores y reconstruí el ciclo de planificación de anual a trimestral continuo."
+    },
+    "impact": {
+      "label": "Impacto",
+      "body": "El ciclo de reportes se redujo de 21 a 6 días. La Serie C se cerró 5 semanas antes del cronograma revisado (cifras ficticias)."
+    },
+    "lessons": {
+      "label": "Lecciones",
+      "body": "Estandarizar las métricas antes de escalar el equipo habría evitado una segunda reorganización 18 meses después."
+    },
+    "evidence": {
+      "label": "Evidencia",
+      "placeholder": "Placeholder — enlazará a la presentación al directorio, captura del dashboard o comunicado en la Fase 2"
+    },
+    "audioCommentary": {
+      "label": "Comentario en Audio"
+    }
+  },
+  "player": {
+    "play": "Reproducir",
+    "pause": "Pausar",
+    "next": "Siguiente",
+    "prev": "Anterior"
+  },
+  "comingSoon": {
+    "badge": "En construcción",
+    "title": "Esta sección está en construcción",
+    "body": "El contenido real de esta página llega en la Fase 2, cuando el historial de carrera, las métricas y las grabaciones estén listos."
+  },
+  "footer": {
+    "text": "Executive Career Experience — vista previa de la arquitectura, Fase 1. Todos los nombres, empresas y cifras en esta página son ficticios."
+  }
+}

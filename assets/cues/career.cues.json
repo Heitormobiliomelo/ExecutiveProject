@@ -1,0 +1,5 @@
+[
+  { "time": 0,    "target": "#context-block",  "action": "scroll-highlight" },
+  { "time": 12.5, "target": "#challenge-block", "action": "scroll-highlight" },
+  { "time": 28,   "target": "#impact-block",    "action": "scroll-highlight" }
+]
