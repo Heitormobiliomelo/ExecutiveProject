@@ -3,79 +3,137 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Alex Morgan — Executive Career Experience</title>
+<title>Heitor Mobílio — Executive Career Experience</title>
 <link rel="stylesheet" href="assets/css/main.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Heitor Mobílio",
+  "jobTitle": "FP&A, Estratégia e Planejamento Financeiro",
+  "description": "Líder de FP&A, estratégia e planejamento com trajetória em empresas digital-first — Serasa, iFood, Porto, Rappi, VOLL e Decolar. Na fronteira entre estratégia e execução.",
+  "url": "index.html",
+  "sameAs": ["https://www.linkedin.com/in/heitor-mobilio/"],
+  "subjectOf": {
+    "@type": "CreativeWork",
+    "name": "AI Screening Summary",
+    "url": "ai-summary.html",
+    "description": "Structured, plain-text candidate summary written for automated resume screening and LLM-based recruiting agents."
+  }
+}
+</script>
 </head>
 <body data-page="landing">
 
 <header class="site-header">
-  <a class="site-header__name" href="index.html" data-i18n="meta.siteName">Alex Morgan</a>
-
+  <a class="site-header__name" href="index.html" data-i18n="meta.siteName">Heitor Mobílio</a>
   <nav>
     <ul class="site-nav">
-      <li><a href="soon.html?section=whoIAm" data-page="who-i-am" data-i18n="nav.whoIAm">Who I Am</a></li>
+      <li><a href="who-i-am.html" data-page="who-i-am" data-i18n="nav.whoIAm">Who I Am</a></li>
       <li><a href="career.html" data-page="career" data-i18n="nav.career">Career</a></li>
-      <li><a href="soon.html?section=impact" data-page="impact" data-i18n="nav.impact">Impact</a></li>
-      <li><a href="soon.html?section=caseStudies" data-page="case-studies" data-i18n="nav.caseStudies">Case Studies</a></li>
-      <li><a href="soon.html?section=howIThink" data-page="how-i-think" data-i18n="nav.howIThink">How I Think</a></li>
-      <li><a href="soon.html?section=inflectionPoints" data-page="inflection-points" data-i18n="nav.inflectionPoints">Career Inflection Points</a></li>
-      <li><a href="soon.html?section=recommendations" data-page="recommendations" data-i18n="nav.recommendations">Recommendations</a></li>
-      <li><a href="soon.html?section=letsTalk" data-page="lets-talk" data-i18n="nav.letsTalk">Let's Talk</a></li>
+      <li><a href="how-i-think.html" data-page="how-i-think" data-i18n="nav.howIThink">How I Think</a></li>
+      <li><a href="inflection-points.html" data-page="inflection-points" data-i18n="nav.inflectionPoints">Career Inflection Points</a></li>
+      <li><a href="recommendations.html" data-page="recommendations" data-i18n="nav.recommendations">Recommendations</a></li>
+      <li><a href="cv-executivo.html" data-page="cv" data-i18n="nav.cv">Executive Resume</a></li>
+      <li><a href="lets-talk.html" data-page="lets-talk" data-i18n="nav.letsTalk">Let's Talk</a></li>
     </ul>
   </nav>
-
   <div class="lang-switcher">
-    <button class="lang-switcher__button" type="button">
-      🌐 <span class="lang-switcher__button-label">EN</span>
+    <button class="lang-switcher__button" type="button" aria-label="Select language">
+      <span class="lang-switcher__button-flag">🌐</span>
+      <span class="lang-switcher__button-label">EN</span>
+      <span class="lang-switcher__caret">▾</span>
     </button>
     <div class="lang-switcher__menu">
-      <button class="lang-switcher__option" data-lang="en" type="button">English</button>
-      <button class="lang-switcher__option" data-lang="pt" type="button">Português</button>
-      <button class="lang-switcher__option" data-lang="es" type="button">Español</button>
+      <button class="lang-switcher__option" data-lang="en" type="button"><span class="flag">🇺🇸</span> English</button>
+      <button class="lang-switcher__option" data-lang="pt" type="button"><span class="flag">🇧🇷</span> Português</button>
+      <button class="lang-switcher__option" data-lang="es" type="button"><span class="flag">🇪🇸</span> Español</button>
     </div>
   </div>
 </header>
 
 <main>
-  <section class="hero container">
-    <div class="hero__photo" data-i18n-attr="aria-label:landing.photoAlt">Photo</div>
-    <h1>Alex Morgan</h1>
-    <p class="hero__role" data-i18n="landing.role">Chief Strategy Officer</p>
-    <p class="hero__summary" data-i18n="landing.summary">
-      Fifteen years turning ambiguous problems into funded decisions.
-    </p>
-
-    <div class="btn-row">
-      <button class="btn btn-primary is-disabled" type="button" disabled title="Coming soon">
-        <span data-i18n="landing.audioGuide">Audio Guide</span>
-      </button>
-      <a class="btn btn-secondary" href="#explore" data-i18n="landing.exploreFreely">Explore Freely</a>
-      <a class="btn btn-secondary" href="#" data-i18n="landing.downloadExecutive">Download Executive Resume</a>
-      <a class="btn btn-secondary" href="#" data-i18n="landing.downloadAts">Download ATS Resume</a>
+  <!-- Hero -->
+  <section class="band band--dark">
+    <div class="hero">
+      <div class="hero__content">
+        <span class="eyebrow" data-i18n="landing.eyebrow">Executive Profile</span>
+        <h1 class="hero__headline" data-i18n="landing.headline">On the frontier between strategy and execution.</h1>
+        <p class="hero__summary" data-i18n="landing.summary">I lead decisions focused on results.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#explore" data-i18n="landing.exploreFreely">Explore Freely</a>
+          <a class="btn btn-secondary" href="assets/documents/CV_Heitor_Mobilio_Executivo_PT.pdf" download data-i18n="landing.downloadExecutive" data-i18n-attr="href:cv.downloadHref">Download Executive Resume</a>
+        </div>
+        <p class="hero__links">
+          <a href="https://www.linkedin.com/in/heitor-mobilio/" target="_blank" rel="noopener" data-i18n="landing.linkedin">LinkedIn</a>
+        </p>
+      </div>
+      <div class="hero__photo-wrap">
+        <img class="hero__photo" src="assets/img/profile/heitor.png" data-i18n-attr="alt:landing.photoAlt" alt="Heitor Mobílio" />
+      </div>
     </div>
 
-    <p class="hero__links">
-      <a href="#" data-i18n="landing.linkedin">LinkedIn</a>
-    </p>
+    <div class="stat-row">
+      <div class="stat"><div class="stat__value" data-i18n="landing.stat1Value">8+</div><div class="stat__label" data-i18n="landing.stat1Label">Years in FP&amp;A &amp; Strategy</div></div>
+      <div class="stat"><div class="stat__value" data-i18n="landing.stat2Value">6</div><div class="stat__label" data-i18n="landing.stat2Label">Digital-first companies</div></div>
+      <div class="stat"><div class="stat__value" data-i18n="landing.stat3Value">R$16bi</div><div class="stat__label" data-i18n="landing.stat3Label">Gross Bookings under management</div></div>
+      <div class="stat"><div class="stat__value" data-i18n="landing.stat4Value">20+</div><div class="stat__label" data-i18n="landing.stat4Label">Executives &amp; boards served</div></div>
+    </div>
   </section>
 
-  <section class="section-nav container" id="explore">
-    <h2 data-i18n="landing.sectionsTitle">Explore</h2>
-    <div class="section-nav__grid">
-      <a class="section-nav__link" href="soon.html?section=whoIAm" data-i18n="nav.whoIAm">Who I Am</a>
-      <a class="section-nav__link" href="career.html" data-i18n="nav.career">Career</a>
-      <a class="section-nav__link" href="soon.html?section=impact" data-i18n="nav.impact">Impact</a>
-      <a class="section-nav__link" href="soon.html?section=caseStudies" data-i18n="nav.caseStudies">Case Studies</a>
-      <a class="section-nav__link" href="soon.html?section=howIThink" data-i18n="nav.howIThink">How I Think</a>
-      <a class="section-nav__link" href="soon.html?section=inflectionPoints" data-i18n="nav.inflectionPoints">Career Inflection Points</a>
-      <a class="section-nav__link" href="soon.html?section=recommendations" data-i18n="nav.recommendations">Recommendations</a>
-      <a class="section-nav__link" href="soon.html?section=letsTalk" data-i18n="nav.letsTalk">Let's Talk</a>
+  <!-- Impact Snapshot -->
+  <section class="band band--light">
+    <div class="band__inner">
+      <span class="eyebrow" data-i18n="landing.impactEyebrow">Impact Snapshot</span>
+      <h2 data-i18n="landing.impactTitle">Evidence over adjectives.</h2>
+      <div class="impact-grid">
+        <div class="impact-item"><div class="impact-item__value" data-i18n="landing.impact1Value">R$330M+</div><div class="impact-item__label" data-i18n="landing.impact1Label">Costs optimized</div><div class="impact-item__desc" data-i18n="landing.impact1Desc">Across the career</div></div>
+        <div class="impact-item"><div class="impact-item__value" data-i18n="landing.impact2Value">R$1bi+</div><div class="impact-item__label" data-i18n="landing.impact2Label">Cash injected</div><div class="impact-item__desc" data-i18n="landing.impact2Desc">45k+ restaurants, iFood/COVID</div></div>
+        <div class="impact-item"><div class="impact-item__value" data-i18n="landing.impact3Value">9 mo</div><div class="impact-item__label" data-i18n="landing.impact3Label">Rappi Brazil to breakeven</div><div class="impact-item__desc" data-i18n="landing.impact3Desc">Recognized individually</div></div>
+        <div class="impact-item"><div class="impact-item__value" data-i18n="landing.impact4Value">80→98%</div><div class="impact-item__label" data-i18n="landing.impact4Label">EBITDA forecast accuracy</div><div class="impact-item__desc" data-i18n="landing.impact4Desc">VOLL</div></div>
+        <div class="impact-item"><div class="impact-item__value" data-i18n="landing.impact5Value">~70%</div><div class="impact-item__label" data-i18n="landing.impact5Label">Delivery unit cost</div><div class="impact-item__desc" data-i18n="landing.impact5Desc">Box Delivery integration, Rappi</div></div>
+      </div>
+      <p style="margin-top: var(--space-6);"><a href="career.html" data-i18n="landing.impactLink">See the full impact timeline in Career →</a></p>
+    </div>
+  </section>
+
+  <!-- Explore -->
+  <section class="band band--dark" id="explore">
+    <div class="band__inner">
+      <span class="eyebrow" data-i18n="landing.sectionsEyebrow">Explore</span>
+      <h2 data-i18n="landing.sectionsTitle">Where you'd like to start.</h2>
+      <div class="section-nav__grid">
+        <a class="section-nav__link" href="who-i-am.html" data-i18n="nav.whoIAm">Who I Am</a>
+        <a class="section-nav__link" href="career.html" data-i18n="nav.career">Career</a>
+        <a class="section-nav__link" href="how-i-think.html" data-i18n="nav.howIThink">How I Think</a>
+        <a class="section-nav__link" href="inflection-points.html" data-i18n="nav.inflectionPoints">Career Inflection Points</a>
+        <a class="section-nav__link" href="recommendations.html" data-i18n="nav.recommendations">Recommendations</a>
+        <a class="section-nav__link" href="lets-talk.html" data-i18n="nav.letsTalk">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="band band--dark cta-band">
+    <div class="band__inner cta-band__inner">
+      <div>
+        <span class="eyebrow" data-i18n="landing.ctaEyebrow">Let's Talk</span>
+        <h2 data-i18n="landing.ctaTitle">Let's build better decisions together.</h2>
+        <p class="lead" data-i18n="landing.ctaBody">Open to challenges where strategy and execution must move together.</p>
+      </div>
+      <div class="cta-list">
+        <a href="https://cal.com/heitor-mobilio-uokr3v" target="_blank" rel="noopener" data-i18n="letsTalk.scheduleCall">Schedule a Conversation</a>
+        <a href="https://www.linkedin.com/in/heitor-mobilio/" target="_blank" rel="noopener" data-i18n="letsTalk.connectLinkedin">Connect on LinkedIn</a>
+      </div>
     </div>
   </section>
 </main>
 
-<footer class="site-footer container">
-  <p data-i18n="footer.text">Executive Career Experience — Phase 1 architecture preview.</p>
+<footer class="site-footer band band--dark">
+  <p data-i18n="footer.textLive">Executive Career Experience — under construction.</p>
+  <p class="site-footer__meta">
+    <a href="ai-summary.html" data-i18n="footer.aiSummaryLink">AI Screening Summary</a> · <a href="llms.txt">llms.txt</a>
+  </p>
 </footer>
 
 <script src="assets/js/nav.js"></script>

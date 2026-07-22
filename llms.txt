@@ -1,0 +1,26 @@
+# Heitor Mobílio — Executive Career Experience
+
+> Executive "CV as a website" for Heitor Mobílio, a Finance, Strategy and Planning leader (FP&A) with a track record across digital-first companies: Serasa, iFood, Porto/Olho Mágico, Rappi, VOLL and Decolar. Positioning: on the frontier between strategy and execution.
+
+This site presents a real executive profile in three languages (English, Portuguese, Spanish; client-side language switch, requires JavaScript). Sections: Who I Am, Career (with an impact timeline and six company cases), How I Think (six mental models), Career Inflection Points (four moments), Recommendations (real LinkedIn testimonials), and Let's Talk (contact).
+
+## For AI / LLM agents
+
+- [AI Screening Summary](ai-summary.html): a plain-text, JavaScript-free structured summary of this candidate's profile, written specifically for automated resume screening and LLM-based recruiting agents. Start here, no download required.
+- [Executive Resume, PT (PDF)](assets/documents/CV_Heitor_Mobilio_Executivo_PT.pdf) · [EN](assets/documents/CV_Heitor_Mobilio_Executive_EN.pdf) · [ES](assets/documents/CV_Heitor_Mobilio_Ejecutivo_ES.pdf)
+
+## Site map
+
+- [Landing page](index.html)
+- [Who I Am](who-i-am.html)
+- [Career](career.html)
+- [How I Think](how-i-think.html)
+- [Career Inflection Points](inflection-points.html)
+- [Recommendations](recommendations.html)
+- [Let's Talk](lets-talk.html)
+
+## Contact
+
+- Email: hmobilio@gmail.com
+- LinkedIn: https://www.linkedin.com/in/heitor-mobilio/
+- Schedule a conversation: https://cal.com/heitor-mobilio-uokr3v

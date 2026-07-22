@@ -1,3 +1,6 @@
 .claude/settings.local.json
 .DS_Store
 Thumbs.db
+
+# Internal planning docs — kept local, not published
+docs/

@@ -3,119 +3,171 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Career — Alex Morgan</title>
+<title>Career — Heitor Mobílio</title>
 <link rel="stylesheet" href="assets/css/main.css" />
+<style>
+  .timeline-scroll { overflow-x: auto; margin-top: var(--space-6); border: 1px solid var(--border); border-radius: 12px; }
+  table.timeline { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 0.875rem; }
+  table.timeline th, table.timeline td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  table.timeline thead th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-muted); font-weight: 600; }
+  table.timeline tbody th { font-weight: 500; color: var(--fg-muted); }
+  table.timeline td { color: var(--fg); font-variant-numeric: tabular-nums; }
+  table.timeline tr:last-child th, table.timeline tr:last-child td { border-bottom: none; }
+  .timeline-note { font-size: 0.75rem; color: var(--fg-muted); margin-top: var(--space-2); }
+</style>
 </head>
 <body data-page="career">
 
 <header class="site-header">
-  <a class="site-header__name" href="index.html" data-i18n="meta.siteName">Alex Morgan</a>
-
+  <a class="site-header__name" href="index.html" data-i18n="meta.siteName">Heitor Mobílio</a>
   <nav>
     <ul class="site-nav">
-      <li><a href="soon.html?section=whoIAm" data-page="who-i-am" data-i18n="nav.whoIAm">Who I Am</a></li>
+      <li><a href="who-i-am.html" data-page="who-i-am" data-i18n="nav.whoIAm">Who I Am</a></li>
       <li><a href="career.html" data-page="career" data-i18n="nav.career">Career</a></li>
-      <li><a href="soon.html?section=impact" data-page="impact" data-i18n="nav.impact">Impact</a></li>
-      <li><a href="soon.html?section=caseStudies" data-page="case-studies" data-i18n="nav.caseStudies">Case Studies</a></li>
-      <li><a href="soon.html?section=howIThink" data-page="how-i-think" data-i18n="nav.howIThink">How I Think</a></li>
-      <li><a href="soon.html?section=inflectionPoints" data-page="inflection-points" data-i18n="nav.inflectionPoints">Career Inflection Points</a></li>
-      <li><a href="soon.html?section=recommendations" data-page="recommendations" data-i18n="nav.recommendations">Recommendations</a></li>
-      <li><a href="soon.html?section=letsTalk" data-page="lets-talk" data-i18n="nav.letsTalk">Let's Talk</a></li>
+      <li><a href="how-i-think.html" data-page="how-i-think" data-i18n="nav.howIThink">How I Think</a></li>
+      <li><a href="inflection-points.html" data-page="inflection-points" data-i18n="nav.inflectionPoints">Career Inflection Points</a></li>
+      <li><a href="recommendations.html" data-page="recommendations" data-i18n="nav.recommendations">Recommendations</a></li>
+      <li><a href="cv-executivo.html" data-page="cv" data-i18n="nav.cv">Executive Resume</a></li>
+      <li><a href="lets-talk.html" data-page="lets-talk" data-i18n="nav.letsTalk">Let's Talk</a></li>
     </ul>
   </nav>
-
   <div class="lang-switcher">
-    <button class="lang-switcher__button" type="button">
-      🌐 <span class="lang-switcher__button-label">EN</span>
+    <button class="lang-switcher__button" type="button" aria-label="Select language">
+      <span class="lang-switcher__button-flag">🌐</span>
+      <span class="lang-switcher__button-label">EN</span>
+      <span class="lang-switcher__caret">▾</span>
     </button>
     <div class="lang-switcher__menu">
-      <button class="lang-switcher__option" data-lang="en" type="button">English</button>
-      <button class="lang-switcher__option" data-lang="pt" type="button">Português</button>
-      <button class="lang-switcher__option" data-lang="es" type="button">Español</button>
+      <button class="lang-switcher__option" data-lang="en" type="button"><span class="flag">🇺🇸</span> English</button>
+      <button class="lang-switcher__option" data-lang="pt" type="button"><span class="flag">🇧🇷</span> Português</button>
+      <button class="lang-switcher__option" data-lang="es" type="button"><span class="flag">🇪🇸</span> Español</button>
     </div>
   </div>
 </header>
 
-<main class="container section">
-  <h1 data-i18n="career.pageTitle">Career</h1>
-  <p class="prose" data-i18n="career.intro">One placeholder entry, built to validate the pattern every future role will follow.</p>
+<main>
+  <!-- Hero + Impact Timeline -->
+  <section class="band band--dark">
+    <div class="band__inner">
+      <span class="eyebrow" data-i18n="nav.career">Career</span>
+      <h1 data-i18n="career.title">A trajectory on the frontier between strategy and execution.</h1>
+      <p class="lead" data-i18n="career.intro">Six companies. The impact, then the story behind each.</p>
 
-  <article class="evidence-card">
-    <div class="evidence-card__header">
-      <div>
-        <h2 data-i18n="career.companyName">Company X</h2>
-        <p class="evidence-card__meta">
-          <span data-i18n="career.companyRole">VP of Strategy &amp; Operations</span>
-          · <span data-i18n="career.companyPeriod">2019 — 2022</span>
-        </p>
+      <h2 style="margin-top: var(--space-8);" data-i18n="career.timelineTitle">Impact Timeline</h2>
+      <div class="timeline-scroll">
+        <table class="timeline">
+          <thead>
+            <tr>
+              <th data-i18n="career.rowIndicator">Indicator</th>
+              <th><div class="th-company"><span class="logo-chip logo-chip--sm"><img src="assets/img/companies/serasa.png" alt="Serasa" /></span><span>Serasa</span><span style="font-weight:400;font-size:0.75rem;color:var(--fg-muted)">2018</span></div></th>
+              <th><div class="th-company"><span class="logo-chip logo-chip--sm"><img src="assets/img/companies/ifood.png" alt="iFood" /></span><span>iFood</span><span style="font-weight:400;font-size:0.75rem;color:var(--fg-muted)">2020</span></div></th>
+              <th><div class="th-company"><span class="logo-chip logo-chip--sm"><img src="assets/img/companies/porto.png" alt="Porto" /></span><span>Porto</span><span style="font-weight:400;font-size:0.75rem;color:var(--fg-muted)">2022</span></div></th>
+              <th><div class="th-company"><span class="logo-chip logo-chip--sm"><img src="assets/img/companies/rappi.png" alt="Rappi" /></span><span>Rappi</span><span style="font-weight:400;font-size:0.75rem;color:var(--fg-muted)">2023</span></div></th>
+              <th><div class="th-company"><span class="logo-chip logo-chip--sm"><img src="assets/img/companies/voll.png" alt="VOLL" /></span><span>VOLL</span><span style="font-weight:400;font-size:0.75rem;color:var(--fg-muted)">2024</span></div></th>
+              <th><div class="th-company"><span class="logo-chip logo-chip--sm"><img src="assets/img/companies/decolar.png" alt="Decolar" /></span><span>Decolar</span><span style="font-weight:400;font-size:0.75rem;color:var(--fg-muted)">2026*</span></div></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th data-i18n="career.rowRevenue">Revenue managed (annual)</th><td data-i18n="career.tlRev1">R$2,95 bi</td><td data-i18n="career.tlRev2">R$5,1 bi</td><td>n/a</td><td data-i18n="career.tlRev4">R$0,6 bi</td><td data-i18n="career.tlRev5">R$1,4 bi</td><td data-i18n="career.tlRev6">R$1,6 bi</td></tr>
+            <tr><th data-i18n="career.rowCosts">Costs optimized</th><td data-i18n="career.tlCost1">R$1,0 mi</td><td data-i18n="career.tlCost2">R$240 mi</td><td data-i18n="career.tlCost3">R$5,5 mi</td><td data-i18n="career.tlCost4">R$77,5 mi</td><td>n/a</td><td data-i18n="career.tlCost6">R$9 mi</td></tr>
+            <tr><th data-i18n="career.rowExecs">Executives served</th><td>2</td><td>4</td><td>4</td><td>3</td><td>6</td><td>5</td></tr>
+            <tr><th data-i18n="career.rowPeople">People led (direct + indirect)</th><td>0</td><td>5</td><td>5</td><td>5</td><td>5</td><td>7</td></tr>
+          </tbody>
+        </table>
       </div>
-      <button class="btn btn-primary" type="button" data-audio-trigger="career">
-        <span data-i18n="career.audioGuide">Audio Guide</span>
-      </button>
+      <p class="timeline-note" data-i18n="career.timelineNote">* 2026 figures are estimated. Full data provided by Heitor Mobílio.</p>
     </div>
+  </section>
 
-    <div class="evidence-block" id="context-block">
-      <p class="evidence-block__label" data-i18n="career.context.label">Context</p>
-      <p data-i18n="career.context.body">Placeholder context text.</p>
-    </div>
+  <!-- Cases -->
+  <section class="band band--light">
+    <div class="band__inner">
+      <span class="eyebrow" data-i18n="career.casesEyebrow">The companies</span>
+      <h2 data-i18n="career.casesTitle">Context → Challenge → Actions → Impact → Lessons.</h2>
 
-    <div class="evidence-block" id="challenge-block">
-      <p class="evidence-block__label" data-i18n="career.challenge.label">Challenge</p>
-      <p data-i18n="career.challenge.body">Placeholder challenge text.</p>
-    </div>
+      <!-- Decolar -->
+      <article class="evidence-card">
+        <div class="evidence-card__header"><div class="ec-title"><span class="logo-chip"><img src="assets/img/companies/decolar.png" alt="Decolar" /></span><h3>Decolar</h3></div><p class="evidence-card__meta" data-i18n="career.decolarMeta">Sr. Planning & Strategy Manager · 2026</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.contextLabel">Context</div><p class="evidence-block__body" data-i18n="career.decolarContext">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.challengeLabel">Challenge</div><p class="evidence-block__body" data-i18n="career.decolarChallenge">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.actionsLabel">Actions</div><p class="evidence-block__body" data-i18n="career.decolarActions">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.impactLabel">Impact</div><p class="evidence-block__body" data-i18n="career.decolarImpact">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.lessonsLabel">Lessons</div><p class="evidence-block__body" data-i18n="career.decolarLessons">.</p></div>
+      </article>
 
-    <div class="evidence-block" id="actions-block">
-      <p class="evidence-block__label" data-i18n="career.actions.label">Actions</p>
-      <p data-i18n="career.actions.body">Placeholder actions text.</p>
-    </div>
+      <!-- VOLL -->
+      <article class="evidence-card">
+        <div class="evidence-card__header"><div class="ec-title"><span class="logo-chip"><img src="assets/img/companies/voll.png" alt="VOLL" /></span><h3>VOLL</h3></div><p class="evidence-card__meta" data-i18n="career.vollMeta">Head of FP&A · 2024–2025</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.contextLabel">Context</div><p class="evidence-block__body" data-i18n="career.vollContext">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.challengeLabel">Challenge</div><p class="evidence-block__body" data-i18n="career.vollChallenge">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.actionsLabel">Actions</div><p class="evidence-block__body" data-i18n="career.vollActions">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.impactLabel">Impact</div><p class="evidence-block__body" data-i18n="career.vollImpact">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.lessonsLabel">Lessons</div><p class="evidence-block__body" data-i18n="career.vollLessons">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.evidenceLabel">Evidence</div><p class="evidence-block__body" data-i18n="career.vollEvidence">.</p></div>
+      </article>
 
-    <div class="evidence-block" id="impact-block">
-      <p class="evidence-block__label" data-i18n="career.impact.label">Impact</p>
-      <p data-i18n="career.impact.body">Placeholder impact text.</p>
-    </div>
+      <!-- Rappi -->
+      <article class="evidence-card">
+        <div class="evidence-card__header"><div class="ec-title"><span class="logo-chip"><img src="assets/img/companies/rappi.png" alt="Rappi" /></span><h3>Rappi</h3></div><p class="evidence-card__meta" data-i18n="career.rappiMeta">Sr. FP&A Manager · 2023–2024</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.contextLabel">Context</div><p class="evidence-block__body" data-i18n="career.rappiContext">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.challengeLabel">Challenge</div><p class="evidence-block__body" data-i18n="career.rappiChallenge">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.actionsLabel">Actions</div><p class="evidence-block__body" data-i18n="career.rappiActions">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.impactLabel">Impact</div><p class="evidence-block__body" data-i18n="career.rappiImpact">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.lessonsLabel">Lessons</div><p class="evidence-block__body" data-i18n="career.rappiLessons">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.evidenceLabel">Evidence</div><p class="evidence-block__body" data-i18n="career.rappiEvidence">.</p></div>
+      </article>
 
-    <div class="evidence-block" id="lessons-block">
-      <p class="evidence-block__label" data-i18n="career.lessons.label">Lessons</p>
-      <p data-i18n="career.lessons.body">Placeholder lessons text.</p>
-    </div>
+      <!-- Porto -->
+      <article class="evidence-card">
+        <div class="evidence-card__header"><div class="ec-title"><span class="logo-chip"><img src="assets/img/companies/porto.png" alt="Porto" /></span><h3>Porto · Olho Mágico</h3></div><p class="evidence-card__meta" data-i18n="career.portoMeta">Finance & Data Analytics Manager · 2022–2023</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.contextLabel">Context</div><p class="evidence-block__body" data-i18n="career.portoContext">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.challengeLabel">Challenge</div><p class="evidence-block__body" data-i18n="career.portoChallenge">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.actionsLabel">Actions</div><p class="evidence-block__body" data-i18n="career.portoActions">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.impactLabel">Impact</div><p class="evidence-block__body" data-i18n="career.portoImpact">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.lessonsLabel">Lessons</div><p class="evidence-block__body" data-i18n="career.portoLessons">.</p></div>
+      </article>
 
-    <div class="evidence-block" id="evidence-block">
-      <p class="evidence-block__label" data-i18n="career.evidence.label">Evidence</p>
-      <div class="evidence-placeholder" data-i18n="career.evidence.placeholder">
-        Placeholder — will link to board deck, dashboard screenshot, or press release in Phase 2
-      </div>
-    </div>
+      <!-- iFood -->
+      <article class="evidence-card">
+        <div class="evidence-card__header"><div class="ec-title"><span class="logo-chip"><img src="assets/img/companies/ifood.png" alt="iFood" /></span><h3>iFood</h3></div><p class="evidence-card__meta" data-i18n="career.ifoodMeta">Sr. FP&A Coordinator · 2020–2022</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.contextLabel">Context</div><p class="evidence-block__body" data-i18n="career.ifoodContext">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.challengeLabel">Challenge</div><p class="evidence-block__body" data-i18n="career.ifoodChallenge">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.actionsLabel">Actions</div><p class="evidence-block__body" data-i18n="career.ifoodActions">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.impactLabel">Impact</div><p class="evidence-block__body" data-i18n="career.ifoodImpact">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.lessonsLabel">Lessons</div><p class="evidence-block__body" data-i18n="career.ifoodLessons">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.evidenceLabel">Evidence</div><p class="evidence-block__body" data-i18n="career.ifoodEvidence">.</p></div>
+      </article>
 
-    <div class="evidence-block" id="audio-commentary-block">
-      <p class="evidence-block__label" data-i18n="career.audioCommentary.label">Audio Commentary</p>
-      <p class="evidence-card__meta">Use the Audio Guide button above to hear this section narrated.</p>
+      <!-- Serasa -->
+      <article class="evidence-card">
+        <div class="evidence-card__header"><div class="ec-title"><span class="logo-chip"><img src="assets/img/companies/serasa.png" alt="Serasa" /></span><h3>Serasa Experian</h3></div><p class="evidence-card__meta" data-i18n="career.serasaMeta">Sr. FP&A Analyst · 2018–2020</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.contextLabel">Context</div><p class="evidence-block__body" data-i18n="career.serasaContext">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.challengeLabel">Challenge</div><p class="evidence-block__body" data-i18n="career.serasaChallenge">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.actionsLabel">Actions</div><p class="evidence-block__body" data-i18n="career.serasaActions">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.impactLabel">Impact</div><p class="evidence-block__body" data-i18n="career.serasaImpact">.</p></div>
+        <div class="evidence-block"><div class="evidence-block__label" data-i18n="career.lessonsLabel">Lessons</div><p class="evidence-block__body" data-i18n="career.serasaLessons">.</p></div>
+      </article>
     </div>
+  </section>
 
-    <div class="audio-guide" data-guide="career" data-cues-src="assets/cues/career.cues.json">
-      <audio
-        data-src-en="assets/audio/placeholder.wav"
-        data-src-pt="assets/audio/placeholder.wav"
-        data-src-es="assets/audio/placeholder.wav"
-        src="assets/audio/placeholder.wav"
-        preload="metadata"
-      ></audio>
-      <div class="audio-player">
-        <button class="audio-player__btn" type="button" data-action="prev" aria-label="Previous">«</button>
-        <button class="audio-player__btn" type="button" data-action="play" aria-label="Play">►</button>
-        <button class="audio-player__btn" type="button" data-action="next" aria-label="Next">»</button>
-        <input class="audio-player__progress" type="range" min="0" max="100" value="0" />
-        <span class="audio-player__time">0:00</span>
-      </div>
-    </div>
-  </article>
+  <div class="audio-player is-active" id="audio-guide" data-audio-base="career">
+    <button class="audio-player__btn" type="button" data-audio-toggle aria-label="Play"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+    <span class="audio-player__label" data-i18n="audio.label">Audio guide</span>
+    <input class="audio-player__progress" type="range" min="0" max="1000" value="0" step="1" data-audio-seek aria-label="Seek" />
+    <span class="audio-player__time" data-audio-time>0:00</span>
+    <audio preload="none" data-audio-el></audio>
+  </div>
 </main>
 
-<footer class="site-footer container">
-  <p data-i18n="footer.text">Executive Career Experience — Phase 1 architecture preview.</p>
+<footer class="site-footer band band--dark">
+  <p data-i18n="footer.textLive">Executive Career Experience — under construction.</p>
+  <p class="site-footer__meta">
+    <a href="ai-summary.html" data-i18n="footer.aiSummaryLink">AI Screening Summary</a> · <a href="llms.txt">llms.txt</a>
+  </p>
 </footer>
 
 <script src="assets/js/nav.js"></script>
 <script src="assets/js/i18n.js"></script>
-<script src="assets/js/guided-experience.js"></script>
+<script src="assets/js/audio-guide.js"></script>
 </body>
 </html>

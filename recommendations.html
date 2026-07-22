@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Recommendations — Heitor Mobílio</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+  .rec-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-4); margin-top: var(--space-6); }
+  @media (min-width: 780px) { .rec-grid { grid-template-columns: 1fr 1fr; } }
+  .rec-card { border: 1px solid var(--border); border-radius: 14px; padding: var(--space-4); background: var(--surface); display: flex; flex-direction: column; }
+  .rec-card blockquote { margin: 0 0 var(--space-3); }
+  .rec-card blockquote p { font-size: 1.0625rem; line-height: 1.65; color: var(--fg); }
+  .rec-card blockquote p:last-child { margin-bottom: 0; }
+  .rec-card__author { margin-top: auto; }
+  .rec-card__name { font-weight: 600; color: var(--fg); }
+  .rec-card__role { font-size: 0.8125rem; color: var(--fg-muted); margin-top: 2px; }
+  .rec-card__rel { font-size: 0.75rem; color: var(--fg-muted); margin-top: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+</style>
+</head>
+<body data-page="recommendations">
+
+<header class="site-header">
+  <a class="site-header__name" href="index.html" data-i18n="meta.siteName">Heitor Mobílio</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="who-i-am.html" data-page="who-i-am" data-i18n="nav.whoIAm">Who I Am</a></li>
+      <li><a href="career.html" data-page="career" data-i18n="nav.career">Career</a></li>
+      <li><a href="how-i-think.html" data-page="how-i-think" data-i18n="nav.howIThink">How I Think</a></li>
+      <li><a href="inflection-points.html" data-page="inflection-points" data-i18n="nav.inflectionPoints">Career Inflection Points</a></li>
+      <li><a href="recommendations.html" data-page="recommendations" data-i18n="nav.recommendations">Recommendations</a></li>
+      <li><a href="cv-executivo.html" data-page="cv" data-i18n="nav.cv">Executive Resume</a></li>
+      <li><a href="lets-talk.html" data-page="lets-talk" data-i18n="nav.letsTalk">Let's Talk</a></li>
+    </ul>
+  </nav>
+  <div class="lang-switcher">
+    <button class="lang-switcher__button" type="button" aria-label="Select language">
+      <span class="lang-switcher__button-flag">🌐</span>
+      <span class="lang-switcher__button-label">EN</span>
+      <span class="lang-switcher__caret">▾</span>
+    </button>
+    <div class="lang-switcher__menu">
+      <button class="lang-switcher__option" data-lang="en" type="button"><span class="flag">🇺🇸</span> English</button>
+      <button class="lang-switcher__option" data-lang="pt" type="button"><span class="flag">🇧🇷</span> Português</button>
+      <button class="lang-switcher__option" data-lang="es" type="button"><span class="flag">🇪🇸</span> Español</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="band band--dark">
+    <div class="band__inner">
+      <span class="eyebrow" data-i18n="nav.recommendations">Recommendations</span>
+      <h1 data-i18n="recommendations.title">What colleagues and leaders say.</h1>
+      <p class="lead" data-i18n="recommendations.intro">Verbatim from LinkedIn.</p>
+
+      <div class="rec-grid">
+        <div class="rec-card">
+          <blockquote><p data-i18n="recommendations.mirnaQuote">Quote.</p></blockquote>
+          <div class="rec-card__author">
+            <img class="rec-card__avatar" src="assets/img/recom/mirna.png" alt="Mirna A. Carvalho" />
+            <div>
+              <div class="rec-card__name">Mirna A. Carvalho</div>
+              <div class="rec-card__role">CFO · Diretora Executiva Financeira</div>
+              <div class="rec-card__rel" data-i18n="recommendations.relMirna">Worked together at Rappi &amp; VOLL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rec-card">
+          <blockquote>
+            <p data-i18n="recommendations.paulaQuote1">Quote.</p>
+            <p data-i18n="recommendations.paulaQuote2">Quote.</p>
+            <p data-i18n="recommendations.paulaQuote3">Quote.</p>
+          </blockquote>
+          <div class="rec-card__author">
+            <img class="rec-card__avatar" src="assets/img/recom/paula.png" alt="Paula Cabianca" />
+            <div>
+              <div class="rec-card__name">Paula Cabianca</div>
+              <div class="rec-card__role">Head of CFO as a Service · Sinapse Finance</div>
+              <div class="rec-card__rel" data-i18n="recommendations.relPaula">Worked together at Serasa &amp; iFood</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rec-card">
+          <blockquote><p data-i18n="recommendations.carolinaQuote">Quote.</p></blockquote>
+          <div class="rec-card__author">
+            <img class="rec-card__avatar" src="assets/img/recom/carolina.png" alt="Carolina Rodrigues" />
+            <div>
+              <div class="rec-card__name">Carolina Rodrigues</div>
+              <div class="rec-card__role">Top 100 CFO Influentes 2024 · Ex-iFood, Ex-Walmart</div>
+              <div class="rec-card__rel" data-i18n="recommendations.relCarolina">Worked together at iFood</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rec-card">
+          <blockquote><p data-i18n="recommendations.luizQuote">Quote.</p></blockquote>
+          <div class="rec-card__author">
+            <img class="rec-card__avatar" src="assets/img/recom/luiz-otavio.png" alt="Luiz Otávio Giordani Junior" />
+            <div>
+              <div class="rec-card__name">Luiz Otávio Giordani Junior</div>
+              <div class="rec-card__role">COO @ Conta Azul</div>
+              <div class="rec-card__rel" data-i18n="recommendations.relLuiz">Direct manager at Rappi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trajectory partners -->
+  <section class="band band--light">
+    <div class="band__inner">
+      <span class="eyebrow" data-i18n="recommendations.partnersEyebrow">Trajectory partners</span>
+      <h2 data-i18n="recommendations.partnersTitle">Partners along the way.</h2>
+      <p class="lead" data-i18n="recommendations.partnersIntro">Leaders I built results with, available to reinforce the experiences on this site.</p>
+      <div class="partners-grid">
+        <a class="partner" href="https://www.linkedin.com/in/pintorenan/" target="_blank" rel="noopener">
+          <span class="partner__name">Renan Pinto</span>
+          <span class="partner__role">CFO, Despegar</span>
+          <span class="partner__link">LinkedIn ↗</span>
+        </a>
+        <a class="partner" href="https://www.linkedin.com/in/diegobarreto/" target="_blank" rel="noopener">
+          <span class="partner__name">Diego Barreto</span>
+          <span class="partner__role">CEO, iFood</span>
+          <span class="partner__link">LinkedIn ↗</span>
+        </a>
+        <a class="partner" href="https://www.linkedin.com/in/felipecriniti/" target="_blank" rel="noopener">
+          <span class="partner__name">Felipe Criniti</span>
+          <span class="partner__role">GM, Rappi Brasil</span>
+          <span class="partner__link">LinkedIn ↗</span>
+        </a>
+        <a class="partner" href="https://www.linkedin.com/in/eduardo-vasconcellos-21309735/" target="_blank" rel="noopener">
+          <span class="partner__name">Eduardo Vasconcellos</span>
+          <span class="partner__role">Founder &amp; CSO, VOLL</span>
+          <span class="partner__link">LinkedIn ↗</span>
+        </a>
+        <a class="partner" href="https://www.linkedin.com/in/rodrigo-elorza-92a98620/" target="_blank" rel="noopener">
+          <span class="partner__name">Rodrigo Elorza</span>
+          <span class="partner__role" data-i18n="recommendations.roleElorza">Head of Products, Porto</span>
+          <span class="partner__link">LinkedIn ↗</span>
+        </a>
+        <a class="partner" href="https://www.linkedin.com/in/danilo-nassif/" target="_blank" rel="noopener">
+          <span class="partner__name">Danilo Nassif</span>
+          <span class="partner__role">CFO, Benner (ex-Serasa)</span>
+          <span class="partner__link">LinkedIn ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer band band--dark">
+  <p data-i18n="footer.textLive">© 2026 Heitor Mobílio.</p>
+  <p class="site-footer__meta">
+    <a href="ai-summary.html" data-i18n="footer.aiSummaryLink">AI Screening Summary</a> · <a href="llms.txt">llms.txt</a>
+  </p>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/i18n.js"></script>
+</body>
+</html>

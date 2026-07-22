@@ -1,6 +1,7 @@
 /* i18n.js — language detection, persistence, and DOM translation */
 
 const SUPPORTED_LANGS = ["en", "pt", "es"];
+const LANG_FLAGS = { en: "🇺🇸", pt: "🇧🇷", es: "🇪🇸" };
 const STORAGE_KEY = "ece_lang";
 const dictCache = {};
 
@@ -51,6 +52,8 @@ function updateLangSwitcherUI(lang) {
   });
   const currentLabel = document.querySelector(".lang-switcher__button-label");
   if (currentLabel) currentLabel.textContent = lang.toUpperCase();
+  const currentFlag = document.querySelector(".lang-switcher__button-flag");
+  if (currentFlag) currentFlag.textContent = LANG_FLAGS[lang] || "🌐";
 }
 
 async function setLang(lang) {

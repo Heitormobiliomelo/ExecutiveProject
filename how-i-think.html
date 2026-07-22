@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How I Think — Heitor Mobílio</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+  .think-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-3); margin-top: var(--space-6); }
+  @media (min-width: 820px) { .think-grid { grid-template-columns: 1fr 1fr; } }
+  .think-card { border: 1px solid var(--border); border-radius: 14px; padding: var(--space-4); background: var(--surface); }
+  .think-card h3 { margin-bottom: var(--space-1); }
+  .think-card__anchor { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-muted); margin-bottom: var(--space-2); }
+  .think-card__lead { margin: 0 0 var(--space-2); font-weight: 600; color: var(--fg); }
+  .think-card__list { margin: 0; padding-left: 1.1em; }
+  .think-card__list li { margin-bottom: 6px; color: var(--fg); font-size: 0.9375rem; line-height: 1.5; }
+  .think-card__list li:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body data-page="how-i-think">
+
+<header class="site-header">
+  <a class="site-header__name" href="index.html" data-i18n="meta.siteName">Heitor Mobílio</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="who-i-am.html" data-page="who-i-am" data-i18n="nav.whoIAm">Who I Am</a></li>
+      <li><a href="career.html" data-page="career" data-i18n="nav.career">Career</a></li>
+      <li><a href="how-i-think.html" data-page="how-i-think" data-i18n="nav.howIThink">How I Think</a></li>
+      <li><a href="inflection-points.html" data-page="inflection-points" data-i18n="nav.inflectionPoints">Career Inflection Points</a></li>
+      <li><a href="recommendations.html" data-page="recommendations" data-i18n="nav.recommendations">Recommendations</a></li>
+      <li><a href="cv-executivo.html" data-page="cv" data-i18n="nav.cv">Executive Resume</a></li>
+      <li><a href="lets-talk.html" data-page="lets-talk" data-i18n="nav.letsTalk">Let's Talk</a></li>
+    </ul>
+  </nav>
+  <div class="lang-switcher">
+    <button class="lang-switcher__button" type="button" aria-label="Select language">
+      <span class="lang-switcher__button-flag">🌐</span>
+      <span class="lang-switcher__button-label">EN</span>
+      <span class="lang-switcher__caret">▾</span>
+    </button>
+    <div class="lang-switcher__menu">
+      <button class="lang-switcher__option" data-lang="en" type="button"><span class="flag">🇺🇸</span> English</button>
+      <button class="lang-switcher__option" data-lang="pt" type="button"><span class="flag">🇧🇷</span> Português</button>
+      <button class="lang-switcher__option" data-lang="es" type="button"><span class="flag">🇪🇸</span> Español</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="band band--dark">
+    <div class="band__inner">
+      <span class="eyebrow" data-i18n="nav.howIThink">How I Think</span>
+      <h1 data-i18n="howIThink.title">The reasoning behind the results.</h1>
+      <p class="lead" data-i18n="howIThink.intro">Career tells what happened; here I tell the reasoning behind it.</p>
+
+      <div class="think-grid">
+        <div class="think-card">
+          <h3 data-i18n="howIThink.a1Title">How I prioritize</h3>
+          <div class="think-card__anchor" data-i18n="howIThink.a1Anchor">Rappi, Porto</div>
+          <p class="think-card__lead" data-i18n="howIThink.a1Lead">.</p>
+          <ul class="think-card__list">
+            <li data-i18n="howIThink.a1b1">.</li>
+            <li data-i18n="howIThink.a1b2">.</li>
+            <li data-i18n="howIThink.a1b3">.</li>
+          </ul>
+        </div>
+        <div class="think-card">
+          <h3 data-i18n="howIThink.a2Title">How I structure problems</h3>
+          <div class="think-card__anchor" data-i18n="howIThink.a2Anchor">iFood, Decolar</div>
+          <p class="think-card__lead" data-i18n="howIThink.a2Lead">.</p>
+          <ul class="think-card__list">
+            <li data-i18n="howIThink.a2b1">.</li>
+            <li data-i18n="howIThink.a2b2">.</li>
+            <li data-i18n="howIThink.a2b3">.</li>
+          </ul>
+        </div>
+        <div class="think-card">
+          <h3 data-i18n="howIThink.a3Title">How I turn data into decisions</h3>
+          <div class="think-card__anchor" data-i18n="howIThink.a3Anchor">Serasa, iFood, VOLL</div>
+          <p class="think-card__lead" data-i18n="howIThink.a3Lead">.</p>
+          <ul class="think-card__list">
+            <li data-i18n="howIThink.a3b1">.</li>
+            <li data-i18n="howIThink.a3b2">.</li>
+            <li data-i18n="howIThink.a3b3">.</li>
+          </ul>
+        </div>
+        <div class="think-card">
+          <h3 data-i18n="howIThink.a4Title">How I use AI</h3>
+          <div class="think-card__anchor" data-i18n="howIThink.a4Anchor">Decolar</div>
+          <p class="think-card__lead" data-i18n="howIThink.a4Lead">.</p>
+          <ul class="think-card__list">
+            <li data-i18n="howIThink.a4b1">.</li>
+            <li data-i18n="howIThink.a4b2">.</li>
+            <li data-i18n="howIThink.a4b3">.</li>
+          </ul>
+        </div>
+        <div class="think-card">
+          <h3 data-i18n="howIThink.a5Title">How I present results</h3>
+          <div class="think-card__anchor" data-i18n="howIThink.a5Anchor">Rappi, VOLL, Decolar</div>
+          <p class="think-card__lead" data-i18n="howIThink.a5Lead">.</p>
+          <ul class="think-card__list">
+            <li data-i18n="howIThink.a5b1">.</li>
+            <li data-i18n="howIThink.a5b2">.</li>
+            <li data-i18n="howIThink.a5b3">.</li>
+          </ul>
+        </div>
+        <div class="think-card">
+          <h3 data-i18n="howIThink.a6Title">How I balance speed and governance</h3>
+          <div class="think-card__anchor" data-i18n="howIThink.a6Anchor">iFood, Decolar</div>
+          <p class="think-card__lead" data-i18n="howIThink.a6Lead">.</p>
+          <ul class="think-card__list">
+            <li data-i18n="howIThink.a6b1">.</li>
+            <li data-i18n="howIThink.a6b2">.</li>
+            <li data-i18n="howIThink.a6b3">.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="audio-player is-active" id="audio-guide" data-audio-base="how-i-think">
+    <button class="audio-player__btn" type="button" data-audio-toggle aria-label="Play"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+    <span class="audio-player__label" data-i18n="audio.label">Audio guide</span>
+    <input class="audio-player__progress" type="range" min="0" max="1000" value="0" step="1" data-audio-seek aria-label="Seek" />
+    <span class="audio-player__time" data-audio-time>0:00</span>
+    <audio preload="none" data-audio-el></audio>
+  </div>
+</main>
+
+<footer class="site-footer band band--dark">
+  <p data-i18n="footer.textLive">Executive Career Experience — under construction.</p>
+  <p class="site-footer__meta">
+    <a href="ai-summary.html" data-i18n="footer.aiSummaryLink">AI Screening Summary</a> · <a href="llms.txt">llms.txt</a>
+  </p>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/audio-guide.js"></script>
+</body>
+</html>
