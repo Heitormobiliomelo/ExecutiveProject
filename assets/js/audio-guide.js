@@ -63,6 +63,11 @@
       timeEl.textContent = "0:00";
     });
 
+    // Show total duration as soon as metadata loads (avoids a stuck "0:00")
+    audio.addEventListener("loadedmetadata", function () {
+      if (audio.paused && !audio.currentTime) timeEl.textContent = fmt(audio.duration);
+    });
+
     audio.addEventListener("timeupdate", function () {
       if (seeking || !audio.duration) return;
       seek.value = Math.round((audio.currentTime / audio.duration) * 1000);
