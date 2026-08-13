@@ -16,6 +16,19 @@
   .think-card__list li { margin-bottom: 6px; color: var(--fg); font-size: 0.9375rem; line-height: 1.5; }
   .think-card__list li:last-child { margin-bottom: 0; }
 </style>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5WGKCCQN2Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5WGKCCQN2Y');
+  /* Conversao: clique em "Schedule a Call" (cal.com) */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="cal.com"]');
+    if (a) gtag('event', 'schedule_call_click', { link_url: a.href, page: location.pathname });
+  });
+</script>
 </head>
 <body data-page="how-i-think">
 
