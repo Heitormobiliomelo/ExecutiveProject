@@ -79,7 +79,9 @@ function initLangSwitcher() {
 
   menu.querySelectorAll(".lang-switcher__option").forEach((btn) => {
     btn.addEventListener("click", () => {
-      setLang(btn.getAttribute("data-lang"));
+      const chosen = btn.getAttribute("data-lang");
+      setLang(chosen);
+      if (typeof gtag === "function") gtag("event", "language_change", { language: chosen });
       menu.classList.remove("is-open");
     });
   });
