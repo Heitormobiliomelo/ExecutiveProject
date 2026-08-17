@@ -4,6 +4,22 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Heitor Mobílio — Executive Career Experience</title>
+<meta name="description" content="FP&A and strategy executive with a track record at Serasa, iFood, Porto, Rappi, VOLL and Decolar. Career, how I think, executive resume and a direct line to talk." />
+<link rel="canonical" href="https://heitormobiliomelo.github.io/ExecutiveProject/" />
+<meta name="robots" content="index,follow" />
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Heitor Mobílio — Executive Career Experience" />
+<meta property="og:title" content="Heitor Mobílio — Executive Career Experience" />
+<meta property="og:description" content="FP&A and strategy executive with a track record at Serasa, iFood, Porto, Rappi, VOLL and Decolar. Career, how I think, executive resume and a direct line to talk." />
+<meta property="og:url" content="https://heitormobiliomelo.github.io/ExecutiveProject/" />
+<meta property="og:image" content="https://heitormobiliomelo.github.io/ExecutiveProject/assets/img/profile/heitor.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Heitor Mobílio — Executive Career Experience" />
+<meta name="twitter:description" content="FP&A and strategy executive with a track record at Serasa, iFood, Porto, Rappi, VOLL and Decolar. Career, how I think, executive resume and a direct line to talk." />
+<meta name="twitter:image" content="https://heitormobiliomelo.github.io/ExecutiveProject/assets/img/profile/heitor.png" />
 <link rel="stylesheet" href="assets/css/main.css" />
 <script type="application/ld+json">
 {
@@ -12,27 +28,39 @@
   "name": "Heitor Mobílio",
   "jobTitle": "FP&A, Estratégia e Planejamento Financeiro",
   "description": "Líder de FP&A, estratégia e planejamento com trajetória em empresas digital-first — Serasa, iFood, Porto, Rappi, VOLL e Decolar. Na fronteira entre estratégia e execução.",
-  "url": "index.html",
+  "url": "https://heitormobiliomelo.github.io/ExecutiveProject/",
   "sameAs": ["https://www.linkedin.com/in/heitor-mobilio/"],
   "subjectOf": {
     "@type": "CreativeWork",
     "name": "AI Screening Summary",
-    "url": "ai-summary.html",
+    "url": "https://heitormobiliomelo.github.io/ExecutiveProject/ai-summary.html",
     "description": "Structured, plain-text candidate summary written for automated resume screening and LLM-based recruiting agents."
   }
 }
 </script>
-<!-- Google Analytics 4 -->
+<!-- Google Analytics 4 · instrumentação v2 (14/ago/2026) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WGKCCQN2Y"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-5WGKCCQN2Y');
-  /* Conversao: clique em "Schedule a Call" (cal.com) */
+  /* Idioma escolhido no site vira propriedade do usuário (dimensão de análise) */
+  var eceLang = (function(){ try { return localStorage.getItem('ece_lang') || 'auto'; } catch(e){ return 'auto'; } })();
+  gtag('set', 'user_properties', { site_language: eceLang });
+  gtag('config', 'G-5WGKCCQN2Y', { page_language: eceLang });
+  /* Eventos-chave (marcar como key events no Admin do GA4):
+     - schedule_call_click : clique em "Schedule a Call" (cal.com)
+     - file_download       : disparado pela Medição aprimorada (PDF) — traz file_name com o idioma do CV
+     - linkedin_click      : clique para o LinkedIn
+     - language_change     : troca de idioma (enviado por assets/js/i18n.js)      */
   document.addEventListener('click', function (e) {
-    var a = e.target.closest && e.target.closest('a[href*="cal.com"]');
-    if (a) gtag('event', 'schedule_call_click', { link_url: a.href, page: location.pathname });
+    var t = e.target.closest ? e.target : null; if (!t) return;
+    var call = t.closest('a[href*="cal.com"]');
+    if (call) gtag('event', 'schedule_call_click', { link_url: call.href, page: location.pathname, cta_text: (call.textContent||'').trim().slice(0,60) });
+    var li = t.closest('a[href*="linkedin.com"]');
+    if (li) gtag('event', 'linkedin_click', { link_url: li.href, page: location.pathname });
+    var cv = t.closest('a[href$=".pdf"]');
+    if (cv) gtag('event', 'cv_download_click', { file_name: (cv.getAttribute('href')||'').split('/').pop(), page: location.pathname, cta_text: (cv.textContent||'').trim().slice(0,60) });
   });
 </script>
 </head>

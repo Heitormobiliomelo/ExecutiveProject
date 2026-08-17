@@ -80,8 +80,12 @@ function initLangSwitcher() {
   menu.querySelectorAll(".lang-switcher__option").forEach((btn) => {
     btn.addEventListener("click", () => {
       const chosen = btn.getAttribute("data-lang");
+      const previous = localStorage.getItem(STORAGE_KEY) || "auto";
       setLang(chosen);
-      if (typeof gtag === "function") gtag("event", "language_change", { language: chosen });
+      if (typeof gtag === "function") {
+        gtag("set", "user_properties", { site_language: chosen });
+        gtag("event", "language_change", { language: chosen, language_from: previous, language_to: chosen, page: location.pathname });
+      }
       menu.classList.remove("is-open");
     });
   });

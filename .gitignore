@@ -4,3 +4,7 @@ Thumbs.db
 
 # Internal planning docs — kept local, not published
 docs/
+
+# Kit do Radar Semanal (repo próprio, contém chave de service account) — nunca publicar no site
+radar-semanal-kit/
+_upgrade-analytics/

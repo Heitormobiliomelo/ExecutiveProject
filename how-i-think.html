@@ -4,6 +4,22 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>How I Think — Heitor Mobílio</title>
+<meta name="description" content="Mental models for finance, strategy and decision-making — how Heitor Mobílio frames problems, prioritizes and executes." />
+<link rel="canonical" href="https://heitormobiliomelo.github.io/ExecutiveProject/how-i-think.html" />
+<meta name="robots" content="index,follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Heitor Mobílio — Executive Career Experience" />
+<meta property="og:title" content="How I Think — Heitor Mobílio" />
+<meta property="og:description" content="Mental models for finance, strategy and decision-making — how Heitor Mobílio frames problems, prioritizes and executes." />
+<meta property="og:url" content="https://heitormobiliomelo.github.io/ExecutiveProject/how-i-think.html" />
+<meta property="og:image" content="https://heitormobiliomelo.github.io/ExecutiveProject/assets/img/profile/heitor.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="How I Think — Heitor Mobílio" />
+<meta name="twitter:description" content="Mental models for finance, strategy and decision-making — how Heitor Mobílio frames problems, prioritizes and executes." />
+<meta name="twitter:image" content="https://heitormobiliomelo.github.io/ExecutiveProject/assets/img/profile/heitor.png" />
 <link rel="stylesheet" href="assets/css/main.css" />
 <style>
   .think-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-3); margin-top: var(--space-6); }
@@ -16,17 +32,29 @@
   .think-card__list li { margin-bottom: 6px; color: var(--fg); font-size: 0.9375rem; line-height: 1.5; }
   .think-card__list li:last-child { margin-bottom: 0; }
 </style>
-<!-- Google Analytics 4 -->
+<!-- Google Analytics 4 · instrumentação v2 (14/ago/2026) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WGKCCQN2Y"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-5WGKCCQN2Y');
-  /* Conversao: clique em "Schedule a Call" (cal.com) */
+  /* Idioma escolhido no site vira propriedade do usuário (dimensão de análise) */
+  var eceLang = (function(){ try { return localStorage.getItem('ece_lang') || 'auto'; } catch(e){ return 'auto'; } })();
+  gtag('set', 'user_properties', { site_language: eceLang });
+  gtag('config', 'G-5WGKCCQN2Y', { page_language: eceLang });
+  /* Eventos-chave (marcar como key events no Admin do GA4):
+     - schedule_call_click : clique em "Schedule a Call" (cal.com)
+     - file_download       : disparado pela Medição aprimorada (PDF) — traz file_name com o idioma do CV
+     - linkedin_click      : clique para o LinkedIn
+     - language_change     : troca de idioma (enviado por assets/js/i18n.js)      */
   document.addEventListener('click', function (e) {
-    var a = e.target.closest && e.target.closest('a[href*="cal.com"]');
-    if (a) gtag('event', 'schedule_call_click', { link_url: a.href, page: location.pathname });
+    var t = e.target.closest ? e.target : null; if (!t) return;
+    var call = t.closest('a[href*="cal.com"]');
+    if (call) gtag('event', 'schedule_call_click', { link_url: call.href, page: location.pathname, cta_text: (call.textContent||'').trim().slice(0,60) });
+    var li = t.closest('a[href*="linkedin.com"]');
+    if (li) gtag('event', 'linkedin_click', { link_url: li.href, page: location.pathname });
+    var cv = t.closest('a[href$=".pdf"]');
+    if (cv) gtag('event', 'cv_download_click', { file_name: (cv.getAttribute('href')||'').split('/').pop(), page: location.pathname, cta_text: (cv.textContent||'').trim().slice(0,60) });
   });
 </script>
 </head>
